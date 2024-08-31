@@ -13,11 +13,3 @@ export default function Index({
 }) {
   return <Main locale={locale} />;
 }
-
-export async function generateStaticParams() {
-  return [
-    { locale: 'en' },
-    { locale: 'ko' },
-    // 지원하는 모든 locale을 여기에 추가
-  ];
-}

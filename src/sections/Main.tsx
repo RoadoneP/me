@@ -57,19 +57,19 @@ export default function Main({ locale }: { locale: Language }) {
             </Flex>
             <Flex
               ref={el => {
-                sectionRef.current[2] = el!;
+                sectionRef.current[1] = el!;
               }}>
               <Educations locale={locale} />
             </Flex>
             <Flex
               ref={el => {
-                sectionRef.current[3] = el!;
+                sectionRef.current[2] = el!;
               }}>
               <Publications locale={locale} />
             </Flex>
             <Flex
               ref={el => {
-                sectionRef.current[1] = el!;
+                sectionRef.current[3] = el!;
               }}>
               <Experiences locale={locale} />
             </Flex>
