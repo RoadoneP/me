@@ -6,8 +6,8 @@ export default function sitemap() {
       changeFrequency: "monthly",
       priority: 1,
       alternates: {
-        ko: "https://www.roadonep.me/ko",
         en: "https://www.roadonep.me",
+        ko: "https://www.roadonep.me/ko",
       },
     },
   ];

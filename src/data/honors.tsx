@@ -71,7 +71,7 @@ const ko: CareerType[] = [
     date: "2023년 5월 - 현재",
     role: "",
     url: "https://www.cmkfoundation-scholarship.org/",
-    description: "현대자동차 정몽구 재단에서 수여하는 장학금 수혜자로 선정",
+    description: "현대자동차 정몽구 재단 장학생으로 선발",
     location: ""
   },
   {
@@ -79,7 +79,7 @@ const ko: CareerType[] = [
     date: "2022년 9월",
     role: "",
     url: "",
-    description: "CodeWithMe: 프로그래밍 수업에서 코드 이미지를 추출해 모델을 통한 Document Understanding, 오타 수정과 코드 이해",
+    description: "CodeWithMe: 프로그래밍 수업에서 코드 이미지를 추출해 모델을 통한 Document Understanding, 오타 수정과 코드 이해 개발",
     location: "금상"
   },
   {
