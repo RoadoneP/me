@@ -57,7 +57,7 @@ const en: CareerType[] = [
   },
   {
     title: "Completion of Smilegate AI Membership",
-    date: "Jul. 2021 - Dec. 2021",
+    date: "Dec. 2021",
     role: "",
     url: "https://futurelab.center/",
     description: "Participated in Smilegate AI Membership",
@@ -132,7 +132,7 @@ const ko: CareerType[] = [
   },
   {
     title: "Smilegate AI Membership 1기 수료",
-    date: "2021년 7월 - 2021년 12월",
+    date: "2021년 12월",
     role: "",
     url: "https://futurelab.center/",
     description: "Smilegate에서 진행하는 AI Membership 프로그램 1기에 참여",

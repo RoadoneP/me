@@ -1,13 +1,8 @@
-import { type As, Button, Icon, Link, ListItem } from "@chakra-ui/react";
+import { Button, Icon, Link, ListItem } from "@chakra-ui/react";
 import NextLink from "next/link";
+import type { IconType } from "react-icons/lib";
 
-export default function SocialButton({
-  href,
-  icon,
-}: {
-  href: string;
-  icon: As;
-}) {
+export default function SocialButton({ href, icon }: { href: string; icon: IconType }) {
   return (
     <ListItem>
       <Link as={NextLink} isExternal href={href}>

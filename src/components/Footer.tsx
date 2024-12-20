@@ -1,10 +1,13 @@
+"use client";
+
+import type { Language } from "@/types";
 import { Button, Center, Flex, Icon, Select, Text, useColorMode } from "@chakra-ui/react";
 import { useRouter } from "next/navigation";
 import { FaMoon, FaSun } from "react-icons/fa6";
 
 export default function Footer({ locale }: { locale: Language }) {
   const { colorMode, toggleColorMode } = useColorMode();
-  const { push } = useRouter();
+  const router = useRouter();
   return (
     <Center flexDir={"column"} gap={2} py={4}>
       <Flex bottom={4} right={4} w={"fit-content"} flexDir="row" gap={2} zIndex={1}>
@@ -15,8 +18,8 @@ export default function Footer({ locale }: { locale: Language }) {
           colorScheme="gray"
           value={locale}
           color="gray"
-          onChange={e => {
-            push(`/${e.target.value}`);
+          onChange={(e) => {
+            router.push(`/${e.target.value}`);
           }}>
           <option value="en">English</option>
           <option value="ko">한국어</option>
