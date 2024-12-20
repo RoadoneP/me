@@ -3,9 +3,17 @@ export const en: CareerType[] = [
     title: "Sungkyunkwan University",
     role: "Research Assistant, Visual Computing Lab",
     location: "Suwon, South Korea",
-    date: "July. 2022 - Present",
+    date: "Jul. 2022 - Present",
     description: "Researching on the topic of Continual Learning, Class-Incremental Learning, Segmentation and Parameter Efficient Fine-Tuning",
     url: "https://sites.google.com/site/vclabskku/intro",
+  },
+  {
+    "title": "Teaching Assistant for LG Electronics Manufacturing AI Leadership Program",
+    "date": "Oct. 2024 - Nov. 2024",
+    "role": "Teaching Assistant",
+    "url": "",
+    "description": "Assisted in the LG Electronics Manufacturing AI Leadership Program by supporting project-based learning and providing guidance on AI methodologies.",
+    "location": ""
   },
   {
     title: "Sungkyunkwan University",
@@ -20,7 +28,7 @@ export const en: CareerType[] = [
     title: "Smilegate Future Lab",
     role: "AI Project Contributor, SGM AI Project",
     location: "Pangyo, South Korea",
-    date: "July 2021 - Dec 2021",
+    date: "July. 2021 - Dec. 2021",
     description: "Developed real-time clothing pattern generation and style conversion under the guidance of the Smilegate AI team.",
     url: "https://futurelab.center/",
   },
@@ -34,6 +42,14 @@ export const ko: CareerType[] = [
     date: "2022년 7월 - 현재",
     description: "Continual Learning, Class-incremental Learning, Semantic Segmentation 및 Parameter Efficient Fine-Tuning에 대한 연구 수행.",
     url: "https://sites.google.com/site/vclabskku/intro",
+  },
+  {
+    "title": "LG전자 제조 AI 리더 과정 프로젝트 조교",
+    "date": "2024년 10월 - 2024년 11월",
+    "role": "조교",
+    "url": "",
+    "description": "LG전자 제조 AI 리더 과정에서 프로젝트 기반 학습 지원 및 AI 방법론 지도 역할 수행.",
+    "location": ""
   },
   {
     title: "성균관대학교",

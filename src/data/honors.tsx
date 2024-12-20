@@ -1,15 +1,23 @@
 const en: CareerType[] = [
   {
     title: "Hyundai Motor Company Chung Mong-koo Scholarship",
-    date: "May 2023 - Present",
+    date: "May. 2023 - Present",
     role: "",
     url: "https://www.cmkfoundation-scholarship.org/",
     description: "Selected as a recipient of the Hyundai Motor Chung Mong-koo Foundation Scholarship",
     location: ""
   },
   {
+    "title": "Qualcomm Innovation Fellowship South Korea 2024",
+    "date": "Nov. 2024",
+    "role": "Finalist",
+    "url": "https://www.qualcomm.com/research/university-relations/innovation-fellowship/finalists",
+    "description": "Selected as a finalist for the Qualcomm Innovation Fellowship South Korea 2024 with the paper 'QIFK2024_69: Mitigating Background Shift in Class-Incremental Semantic Segmentation.'",
+    "location": ""
+  },  
+  {
     title: "2nd SKKU AI-SW Education Hackathon",
-    date: "September 2022",
+    date: "Sep. 2022",
     role: "",
     url: "",
     description: "CodeWithMe: Extracted code images during programming lectures, utilizing a model for Document Understanding, typo correction, and code comprehension",
@@ -17,7 +25,7 @@ const en: CareerType[] = [
   },
   {
     title: "Outstanding Paper Award at ACK 2021, Korea Information Processing Society",
-    date: "December 2021",
+    date: "Dec. 2021",
     role: "",
     url: "",
     description: "Received Outstanding Paper Award at the ICT Conference of Korea Information Processing Society (ACK 2021) with the paper 'Edge Computing-Based Cloud Parking Management System'",
@@ -25,7 +33,7 @@ const en: CareerType[] = [
   },
   {
     title: "1st SKKU SW-AI Education Capstone Design Competition",
-    date: "December 2021",
+    date: "Dec. 2021",
     role: "",
     url: "https://www.youtube.com/watch?v=lrE2tKr2wsk",
     description: "Implemented the game 'Red Light, Green Light' from Netflix's 'Squid Game' using Jetson Nano",
@@ -33,7 +41,7 @@ const en: CareerType[] = [
   },
   {
     title: "2021 Hanium Competition",
-    date: "December 2021",
+    date: "Dec. 2021",
     role: "",
     url: "https://github.com/RoadoneP/Korean_license_plate_recognition",
     description: "Developed a Korean license plate recognition model using LPRnet and parking automation program",
@@ -41,7 +49,7 @@ const en: CareerType[] = [
   },
   {
     title: "1st SKKU AI-SW Education Hackathon",
-    date: "October 2021",
+    date: "Oct. 2021",
     role: "",
     url: "",
     description: "Focus Maker: A service to measure online learners' concentration index and provide self-feedback",
@@ -49,7 +57,7 @@ const en: CareerType[] = [
   },
   {
     title: "Completion of Smilegate AI Membership",
-    date: "July 2021 - December 2021",
+    date: "Jul. 2021 - Dec. 2021",
     role: "",
     url: "https://futurelab.center/",
     description: "Participated in Smilegate AI Membership",
@@ -57,7 +65,7 @@ const en: CareerType[] = [
   },
   {
     title: "2021 AI Online Competition",
-    date: "August 2021",
+    date: "Aug. 2021",
     role: "",
     url: "",
     description: "Won 3rd place in the AI Online Competition hosted by the Ministry of Science and ICT with a model detecting driver negligence behavior for accident prevention",
@@ -67,13 +75,21 @@ const en: CareerType[] = [
 
 const ko: CareerType[] = [
   {
-    title: "현대자동차 정몽구 장학금",
+    title: "현대자동차 정몽구 장학재단 장학생",
     date: "2023년 5월 - 현재",
     role: "",
     url: "https://www.cmkfoundation-scholarship.org/",
     description: "현대자동차 정몽구 재단 장학생으로 선발",
     location: ""
   },
+  {
+    "title": "Qualcomm Innovation Fellowship South Korea 2024",
+    "date": "2024년 11월",
+    "role": "Finalist",
+    "url": "https://www.qualcomm.com/research/university-relations/innovation-fellowship/finalists",
+    "description": "'QIFK2024_69: Mitigating Background Shift in Class-Incremental Semantic Segmentation' 논문으로 Qualcomm Innovation Fellowship South Korea 2024의 파이널리스트로 선정됨.",
+    "location": ""
+  },  
   {
     title: "2022 제2회 성균관대학교 인공지능 SW-교육 해커톤",
     date: "2022년 9월",

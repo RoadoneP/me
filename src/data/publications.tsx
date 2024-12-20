@@ -8,6 +8,7 @@ export const publications: PubType[] = [
     ],
     githubLink: "https://github.com/RoadoneP/ECCV2024_MBS",
     pdfLink: "https://arxiv.org/abs/2407.11859",
+    videoDemoLink: "https://www.youtube.com/watch?v=YQhbYOsedsA&t=135s"
   },
   {
     abbr: "GAN",
@@ -26,5 +27,6 @@ export const publications: PubType[] = [
       "Proceedings of the Korea Information Processing Society Conference. KIPS, 2021",
     ],
     pdfLink: "https://koreascience.kr/article/CFKO202133649075982.page",
+    githubLink: "https://github.com/RoadoneP/Korean_license_plate_recognition"
   },
 ];

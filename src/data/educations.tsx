@@ -12,7 +12,7 @@ const educations_en: CareerType[] = [
     role: "Bachelor of Science in Computer Science and Education",
     location: "Seoul, South Korea",
     date: "Mar. 2017 - Feb. 2023",
-    description: "GPA: 3.94/4.5",
+    description: "GPA: 3.81/4.5",
     url: "https://comedu.skku.edu",
   },
   {
@@ -38,7 +38,7 @@ const educations_ko: CareerType[] = [
     role: "컴퓨터교육과 이학사",
     location: "서울, 대한민국",
     date: "2017년 3월 - 2023년 2월",
-    description: "학점: 3.94/4.5",
+    description: "학점: 3.81/4.5",
     url: "https://comedu.skku.edu",
   },
   {
