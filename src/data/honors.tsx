@@ -83,35 +83,35 @@ const ko: CareerType[] = [
     location: ""
   },
   {
-    "title": "Qualcomm Innovation Fellowship South Korea 2024",
-    "date": "2024년 11월",
-    "role": "Finalist",
-    "url": "https://www.qualcomm.com/research/university-relations/innovation-fellowship/finalists",
-    "description": "'QIFK2024_69: Mitigating Background Shift in Class-Incremental Semantic Segmentation' 논문으로 Qualcomm Innovation Fellowship South Korea 2024의 파이널리스트로 선정됨.",
-    "location": ""
-  },  
+    title: "Qualcomm Innovation Fellowship South Korea 2024",
+    date: "2024년 11월",
+    role: "Finalist",
+    url: "https://www.qualcomm.com/research/university-relations/innovation-fellowship/finalists",
+    description: "'QIFK2024_69: Mitigating Background Shift in Class-Incremental Semantic Segmentation' 논문으로 Qualcomm Innovation Fellowship South Korea 2024 Finalist 선정",
+    location: ""
+  },
   {
-    title: "2022 제2회 성균관대학교 인공지능 SW-교육 해커톤",
+    title: "제2회 성균관대학교 AI·SW 교육 해커톤",
     date: "2022년 9월",
     role: "",
     url: "",
-    description: "CodeWithMe: 프로그래밍 수업에서 코드 이미지를 추출해 모델을 통한 Document Understanding, 오타 수정과 코드 이해 개발",
+    description: "CodeWithMe 프로젝트: 프로그래밍 수업 중 코드 이미지 추출 후 Document Understanding, 오타 보정, 코드 이해 모델 개발",
     location: "금상"
   },
   {
-    title: "2021 한국정보처리학회 ICT 학술대회(ACK 2021) 우수상",
+    title: "ACK 2021 우수논문상, 한국정보처리학회",
     date: "2021년 12월",
     role: "",
     url: "",
-    description: "'엣지 컴퓨팅 기반 클라우드 주차관리 시스템' 논문을 통한 한국정보처리학회 ICT 학술대회에서 우수상 수상",
+    description: "'Edge Computing-Based Cloud Parking Management System' 논문으로 ACK 2021 우수논문상 수상",
     location: "우수상"
   },
   {
-    title: "2021 제1회 성균관대학교 SW-AI교육 캡스톤 디자인 경진대회",
+    title: "제1회 성균관대학교 SW·AI 교육 캡스톤 디자인 경진대회",
     date: "2021년 12월",
     role: "",
     url: "https://www.youtube.com/watch?v=lrE2tKr2wsk",
-    description: "젯슨나노를 활용하여 넷플릭스 시리즈 '오징어게임'에서의 게임인 '무궁화 꽃이 피었습니다'를 구현",
+    description: "Jetson Nano 기반으로 Netflix 'Squid Game'의 'Red Light, Green Light' 게임 구현",
     location: "대상"
   },
   {
@@ -119,31 +119,31 @@ const ko: CareerType[] = [
     date: "2021년 12월",
     role: "",
     url: "https://github.com/RoadoneP/Korean_license_plate_recognition",
-    description: "LPRnet과 주차자동화 프로그램을 활용한 국내 번호판 인식 모델 개발",
+    description: "LPRnet을 활용한 한국 차량 번호판 인식 모델 및 주차 자동화 프로그램 개발",
     location: "입선"
   },
   {
-    title: "2021 제1회 성균관대학교 인공지능 SW-교육 해커톤",
+    title: "제1회 성균관대학교 AI·SW 교육 해커톤",
     date: "2021년 10월",
     role: "",
     url: "",
-    description: "Focus Maker: 온라인 학습자 집중도 지표 측정 및 자가 피드백 서비스",
+    description: "Focus Maker: 온라인 학습자의 집중도 지표를 측정하고 self-feedback을 제공하는 서비스 개발",
     location: "은상"
   },
   {
-    title: "Smilegate AI Membership 1기 수료",
+    title: "Smilegate AI Membership 1기",
     date: "2021년 12월",
     role: "",
     url: "https://futurelab.center/",
-    description: "Smilegate에서 진행하는 AI Membership 프로그램 1기에 참여",
+    description: "Smilegate AI Membership 1기 프로그램 수료",
     location: ""
-  },  
+  },
   {
     title: "2021 인공지능 온라인 경진대회",
     date: "2021년 8월",
     role: "",
     url: "",
-    description: "과학기술정보통신부 주최 인공지능 온라인 경진대회 '운전 사고 예방을 위한 운전자 부주의 행동 검출 모델' 부분에서 3위 수상",
+    description: "과학기술정보통신부 주최 대회에서 '운전자 부주의 행동 검출을 통한 사고 예방 모델'로 3위 수상",
     location: "3위"
   }
 ];
