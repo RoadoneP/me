@@ -1,7 +1,7 @@
 export const authors: AuthorType[] = [
   {
     name: "Gilhan Park",
-    url: "https://roadonep.me",
+    url: "https://gilhanpark.me",
   },
   {
     name: "Jae-Pil Heo",

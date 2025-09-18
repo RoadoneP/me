@@ -4,7 +4,7 @@ export const en: CareerType[] = [
     role: "Research Assistant, Visual Computing Lab",
     location: "Suwon, South Korea",
     date: "Jul. 2022 - Present",
-    description: "Researching on the topic of Continual Learning, Class-Incremental Learning, Segmentation and Parameter Efficient Fine-Tuning",
+    description: "Researching on the topic of 2D and 3D Segmentation (2D-to-3D Lifting), Continual Learning, and Incremental Learning for adaptive vision systems",
     url: "https://sites.google.com/site/vclabskku/intro",
   },
   {
@@ -37,12 +37,12 @@ export const en: CareerType[] = [
 export const ko: CareerType[] = [
   {
     title: "성균관대학교",
-    role: "연구원, 비주얼 컴퓨팅 연구실",
+    role: "연구원, Visual Computing Lab",
     location: "수원, 대한민국",
     date: "2022년 7월 - 현재",
-    description: "Continual Learning, Class-incremental Learning, Semantic Segmentation 및 Parameter Efficient Fine-Tuning에 대한 연구 수행.",
+    description: "2D 및 3D 세그멘테이션(2D-to-3D Lifting), Continual Learning, Incremental Learning 분야 연구.",
     url: "https://sites.google.com/site/vclabskku/intro",
-  },
+  },  
   {
     "title": "LG전자 제조 AI 리더 과정 프로젝트 조교",
     "date": "2024년 10월 - 2024년 11월",

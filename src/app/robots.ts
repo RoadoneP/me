@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://www.roadonep.me/sitemap.xml",
+    sitemap: "https://www.gilhanpark.me/sitemap.xml",
   };
 }

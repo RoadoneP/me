@@ -1,9 +1,17 @@
 const educations_en: CareerType[] = [
   {
     title: "Sungkyunkwan University",
+    role: "Ph.D. in Artificial Intelligence",
+    location: "Suwon, South Korea",
+    date: "Mar. 2025 - Present",
+    description: "",
+    url: "https://ai.skku.edu",
+  },
+  {
+    title: "Sungkyunkwan University",
     role: "Master of Engineering in Artificial Intelligence",
     location: "Suwon, South Korea",
-    date: "Mar. 2023 - Present",
+    date: "Mar. 2023 - Feb. 2025",
     description: "GPA: 3.94/4.5",
     url: "https://ai.skku.edu",
   },
@@ -27,9 +35,17 @@ const educations_en: CareerType[] = [
 const educations_ko: CareerType[] = [
   {
     title: "성균관대학교",
+    role: "인공지능학과 박사과정",
+    location: "수원, 대한민국",
+    date: "2025년 3월 - 현재",
+    description: "",
+    url: "https://ai.skku.edu",
+  },  
+  {
+    title: "성균관대학교",
     role: "인공지능학과 석사과정 (2025년 2월 졸업 예정)",
     location: "수원, 대한민국",
-    date: "2023년 3월 - 현재",
+    date: "2023년 3월 - 2025년 2월",
     description: "학점: 3.94/4.5",
     url: "https://ai.skku.edu",
   },

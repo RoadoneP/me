@@ -1,31 +1,24 @@
 const en = [
   {
-    date: "Nov. 2024",
-    description: "'QIFK2024_69: Mitigating Background Shift in Class-Incremental Semantic Segmentation' has been selected as a finalist for Qualcomm Innovation Fellowship South Korea 2024!"
-  },  
-  {
-    date: "Oct. 2024",
-    description: `Attending ECCV 2024 (Milano, Italy) and presenting a poster!🔥`
+    date: "Mar. 2023",
+    description: "Started my Ph.D. program in Artificial Intelligence at Sungkyunkwan University as a member of the Visual Computing LAB (VCLAB)."
   },
   {
-    date: "Jun. 2024",
-    description: `'Mitigating Background Shift in Class-Incremental Semantic Segmentation' has been accepted for publication at ECCV, a top-tier computer vision conference!`,
-  },
+    date: "Mar. 2024",
+    description: "Selected as a Ph.D. scholarship recipient of the Hyundai Motor Chung Mong-Koo Foundation."
+  }
+  
 ];
 
 const ko = [
   {
-    date: "2024년 11월",
-    description: "'QIFK2024_69: Mitigating Background Shift in Class-Incremental Semantic Segmentation' 논문으로 Qualcomm Innovation Fellowship South Korea 2024의 Fainalist로 선정되었습니다!"
+    date: "Mar. 2023",
+    description: "성균관대학교 인공지능학과 박사과정에 입학하여 Visual Computing LAB (VCLAB)에서 연구를 시작하였습니다."
   },
   {
-    date: "2024년 10월",
-    description: `ECCV 2024에 참석하여 포스터를 발표합니다!🔥`
-  },
-  {
-    date: "2024년 6월",
-    description: `'Mitigating Background Shift in Class-Incremental Semantic Segmentation' 가 컴퓨터 비전 탑 티어 컨퍼런스인 ECCV에 개제 승인 되었습니다!`,
-  },
+    date: "Mar. 2024",
+    description: "현대차 정몽구 장학재단 박사과정 장학생으로 선발되었습니다."
+  }  
 ];
 
 export const news = { en, ko };
