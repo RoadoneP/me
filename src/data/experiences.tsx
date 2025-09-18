@@ -1,7 +1,7 @@
 export const en: CareerType[] = [
   {
     title: "Sungkyunkwan University",
-    role: "Research Assistant, Visual Computing Lab",
+    role: "Researcher, Visual Computing Lab",
     location: "Suwon, South Korea",
     date: "Jul. 2022 - Present",
     description: "Researching on the topic of 2D and 3D Segmentation (2D-to-3D Lifting), Continual Learning, and Incremental Learning for adaptive vision systems",

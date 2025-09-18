@@ -1,5 +1,14 @@
 export const publications: PubType[] = [
   {
+    abbr: "PRVR",
+    title: "Mitigating Semantic Collapse in Partially Relevant Video Retrieval",
+    authorNames: ["WonJun Moon", "MinSeok Jung", "Gilhan Park", "Tae-Young Kim", "Cheol-Ho Cho",  "Woojin Jun", "Jae-Pil Heo"],
+    equalContrib: ["WonJun Moon", "MinSeok Jung"],
+    venue: [
+      "Proceedings of the 39th Conference on Neural Information Processing Systems (NeurIPS 2025)",
+    ],
+  },
+  {
     abbr: "MBS",
     title: "Mitigating Background Shift in Class-Incremental Semantic Segmentation",
     authorNames: ["Gilhan Park", "WonJun Moon", "SuBeen Lee", "Tae-Young Kim", "Jae-Pil Heo"],

@@ -16,6 +16,7 @@ export type PubType = {
   title: string;
   authorNames: string[];
   venue: string[];
+  equalContrib?: string[];
   pdfLink?: string;
   githubLink?: string;
   webDemoLink?: string;

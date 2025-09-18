@@ -19,4 +19,8 @@ export const authors: AuthorType[] = [
     name: "Tae-Young Kim",
     url: "https://vanmeruso.github.io/",
   },
+  {
+    name: "MinSeok Jung",
+    url: "https://admins97.github.io/",
+  }
 ];

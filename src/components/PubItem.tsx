@@ -7,35 +7,49 @@ import { FaFilePdf, FaGithub, FaGlobe, FaVideo, FaVolumeHigh } from "react-icons
 import { type IconType } from "react-icons";
 import type { PubType } from "@/types";
 
-function AuthorNames({ authorNames }: { authorNames: string[] }) {
+function AuthorNames({
+  authorNames,
+  equalContrib,
+}: {
+  authorNames: string[];
+  equalContrib?: string[];
+}) {
   return (
     <>
-      {authorNames.map((author, index) => (
-        <Text as="i" key={`authorNames${index}`}>
-          <Link as={NextLink} href={authors.find((a) => a.name === author)?.url ?? ""}>
-            <Text as="span" key={`author${index}`}>
-              <Highlight
-                query={["Gilhan Park"]}
-                styles={{
-                  backgroundColor: "none",
-                  padding: 0,
-                  textDecoration: "underline",
-                }}>
-                {author}
-              </Highlight>
+      {authorNames.map((author, index) => {
+        const authorData = authors.find((a) => a.name === author);
+        const isEqual = equalContrib?.some(
+          (eq) => eq.trim().toLowerCase() === author.trim().toLowerCase()
+        );
+
+        return (
+          <Text as="i" key={`authorNames${index}`}>
+            <Link as={NextLink} href={authorData?.url ?? ""}>
+              <Text as="span" key={`author${index}`}>
+                <Highlight
+                  query={["Gilhan Park"]}
+                  styles={{
+                    backgroundColor: "none",
+                    padding: 0,
+                    textDecoration: "underline",
+                  }}
+                >
+                  {`${author}${isEqual ? "*" : ""}`}
+                </Highlight>
+              </Text>
+            </Link>
+            <Text as="span">
+              {index === authorNames.length - 2
+                ? authorNames.length === 2
+                  ? " and "
+                  : ", and "
+                : index === authorNames.length - 1
+                  ? ""
+                  : ", "}
             </Text>
-          </Link>
-          <Text as="span">
-            {index === authorNames.length - 2
-              ? authorNames.length === 2
-                ? " and "
-                : ", and "
-              : index === authorNames.length - 1
-                ? ""
-                : ", "}
           </Text>
-        </Text>
-      ))}
+        );
+      })}
     </>
   );
 }
@@ -66,7 +80,10 @@ export default function PubItem(props: { pub: PubType }, key: string) {
         {props.pub.title}
       </Text>
 
-      <AuthorNames authorNames={props.pub.authorNames} />
+      <AuthorNames
+        authorNames={props.pub.authorNames}
+        equalContrib={props.pub.equalContrib}
+      />
 
       {props.pub.venue.map((venue: string) => (
         <Text color={"gray"} fontSize={"sm"} key={venue}>
