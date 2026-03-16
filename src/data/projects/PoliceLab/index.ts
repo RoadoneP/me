@@ -11,6 +11,7 @@ const project: ProjectType = {
   selected: false,
   type: "project",
   date: "Jul. 2022 ~ Feb. 2025",
+  videoDemoLink: "https://drive.google.com/file/d/1XUiGTh5CN42YYDQupSzqeVgQHdMWCYgZ/view",
 };
 
 export default project;

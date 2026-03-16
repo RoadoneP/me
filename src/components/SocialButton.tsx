@@ -1,13 +1,37 @@
-import { Button, Icon, Link, ListItem } from "@chakra-ui/react";
+import { Button, Icon, Link, ListItem, useColorModeValue } from "@chakra-ui/react";
 import NextLink from "next/link";
 import type { IconType } from "react-icons/lib";
 
-export default function SocialButton({ href, icon }: { href: string; icon: IconType }) {
+export default function SocialButton({
+  href,
+  icon,
+  label,
+}: {
+  href: string;
+  icon: IconType;
+  label: string;
+}) {
+  const bg = useColorModeValue("whiteAlpha.900", "whiteAlpha.060");
+  const borderColor = useColorModeValue("blackAlpha.100", "whiteAlpha.140");
+  const hoverBg = useColorModeValue("white", "whiteAlpha.100");
+
   return (
     <ListItem>
       <Link as={NextLink} isExternal href={href}>
-        <Button p={1} variant={"ghost"} colorScheme="gray">
-          <Icon as={icon} />
+        <Button
+          size="sm"
+          variant="outline"
+          leftIcon={<Icon as={icon} />}
+          bg={bg}
+          borderColor={borderColor}
+          fontWeight={600}
+          borderRadius="full"
+          _hover={{
+            bg: hoverBg,
+            borderColor: "brand.300",
+            transform: "translateY(-1px)",
+          }}>
+          {label}
         </Button>
       </Link>
     </ListItem>

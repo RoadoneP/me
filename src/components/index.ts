@@ -7,3 +7,4 @@ export { default as Navigation } from "./Navigation";
 export { default as ProjectCard } from "./ProjectCard";
 export { default as ProjectModal } from "./ProjectModal";
 export { default as PubItem } from "./PubItem";
+export { default as SectionTitle } from "./SectionTitle";

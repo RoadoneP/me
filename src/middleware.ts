@@ -1,22 +1,20 @@
-import { createI18nMiddleware } from "next-international/middleware";
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
-const I18nMiddleware = createI18nMiddleware({
-  locales: ["en", "ko"],
-  defaultLocale: "en",
-  urlMappingStrategy: "rewriteDefault",
-});
+const localePrefixes = ["/en", "/ko"];
 
 export function middleware(request: NextRequest) {
   const url = request.nextUrl.clone();
+  const hasLocalePrefix = localePrefixes.some(
+    prefix => url.pathname === prefix || url.pathname.startsWith(`${prefix}/`),
+  );
 
-  if (!url.pathname.startsWith("/ko") && !url.pathname.startsWith("/en")) {
+  if (!hasLocalePrefix) {
     url.pathname = `/en${url.pathname}`;
-    return NextResponse.rewrite(url);
+    return NextResponse.redirect(url);
   }
 
-  return I18nMiddleware(request);
+  return NextResponse.next();
 }
 
 export const config = {

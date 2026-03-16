@@ -40,7 +40,7 @@ const educations_ko: CareerType[] = [
     date: "2025년 3월 - 현재",
     description: "",
     url: "https://ai.skku.edu",
-  },  
+  },
   {
     title: "성균관대학교",
     role: "인공지능학과 공학석사",

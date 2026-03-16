@@ -2,7 +2,6 @@ import { PRIMARY } from "@/theme";
 import {
   Box,
   Heading,
-  List,
   ListItem,
   OrderedList,
   Text,
@@ -16,12 +15,12 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
   const { colorMode } = useColorMode();
   return {
     h1: ({ children }) => (
-      <Heading as="h1" size={"lg"} my={2}>
+      <Heading as="h1" size={"xl"} my={4}>
         {children}
       </Heading>
     ),
     h2: ({ children }) => (
-      <Heading as="h2" size={"md"} my={2}>
+      <Heading as="h2" size={"lg"} my={3}>
         {children}
       </Heading>
     ),
@@ -31,7 +30,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
       </Heading>
     ),
     p: ({ children }) => (
-      <Text as={"p"} fontSize={"md"} lineHeight={1.5}>
+      <Text as={"p"} fontSize={{ base: "md", md: "lg" }} lineHeight={1.9}>
         {children}
       </Text>
     ),
@@ -42,7 +41,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     ),
     a: ({ href, children }) => (
       <Link href={href ?? "/"}>
-        <Text as={"span"} textDecoration={"underline"}>
+        <Text as={"span"} color={colorMode === "light" ? PRIMARY[700] : PRIMARY[200]}>
           {children}
         </Text>
       </Link>
@@ -52,11 +51,11 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
         {children}
       </Text>
     ),
-    ol: ({ children }) => <OrderedList>{children}</OrderedList>,
-    ul: ({ children }) => <UnorderedList>{children}</UnorderedList>,
+    ol: ({ children }) => <OrderedList spacing={2}>{children}</OrderedList>,
+    ul: ({ children }) => <UnorderedList spacing={2}>{children}</UnorderedList>,
     li: ({ children }) => (
       <ListItem>
-        <Text as={"p"} fontSize={"md"} lineHeight={1.5}>
+        <Text as={"p"} fontSize={"md"} lineHeight={1.8}>
           {children}
         </Text>
       </ListItem>
@@ -64,13 +63,20 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     blockquote: ({ children }) => (
       <Box
         as={"blockquote"}
-        border={"2px solid"}
-        borderColor={colorMode === "light" ? PRIMARY[500] : PRIMARY[200]}
-        borderRadius={"md"}
-        pt={2}
-        pb={4}
-        px={4}
-        mb={8}>
+        borderWidth={"1px"}
+        borderLeftWidth={"4px"}
+        borderColor={colorMode === "light" ? PRIMARY[200] : PRIMARY[700]}
+        borderLeftColor={colorMode === "light" ? PRIMARY[500] : PRIMARY[200]}
+        bg={colorMode === "light" ? "whiteAlpha.700" : "whiteAlpha.050"}
+        borderRadius={"2xl"}
+        py={4}
+        px={5}
+        mb={8}
+        boxShadow={
+          colorMode === "light"
+            ? "0 18px 48px rgba(15, 23, 42, 0.06)"
+            : "0 18px 48px rgba(0, 0, 0, 0.16)"
+        }>
         {children}
       </Box>
     ),

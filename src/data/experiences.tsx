@@ -37,7 +37,6 @@ export const en: CareerType[] = [
   },
 ];
 
-
 export const ko: CareerType[] = [
   {
     title: "성균관대학교",
@@ -62,8 +61,7 @@ export const ko: CareerType[] = [
     role: "Undergraduate Research Student, CSI Lab",
     location: "수원, 대한민국",
     date: "2021년 12월 - 2022년 6월",
-    description:
-      "Remote Sensing Dataset에서 Semantic Segmentation 성능 향상을 위한 연구 수행.",
+    description: "Remote Sensing Dataset에서 Semantic Segmentation 성능 향상을 위한 연구 수행.",
     url: "https://sites.google.com/view/csi-agent-group/about",
   },
   {
@@ -71,13 +69,10 @@ export const ko: CareerType[] = [
     role: "AI Contributor, SGM AI Project 1기",
     location: "판교, 대한민국",
     date: "2021년 7월 - 2021년 12월",
-    description:
-      "Real-time clothing pattern generation 및 Style Transfer 관련 모델 개발.",
+    description: "Real-time clothing pattern generation 및 Style Transfer 관련 모델 개발.",
     url: "https://futurelab.center/",
   },
 ];
-
-
 
 export const experiences: I18nData = {
   en,

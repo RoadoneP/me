@@ -18,6 +18,7 @@ export type PubType = {
   venue: string[];
   equalContrib?: string[];
   pdfLink?: string;
+  posterLink?: string;
   githubLink?: string;
   webDemoLink?: string;
   videoDemoLink?: string;
@@ -60,6 +61,12 @@ export type ProjectType = {
   type: "research" | "project";
   abbr: string;
   date?: string;
+  pdfLink?: string;
+  posterLink?: string;
+  githubLink?: string;
+  webDemoLink?: string;
+  videoDemoLink?: string;
+  talkLink?: string;
 };
 
 export type FlexWithLanguageProps = {

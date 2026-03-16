@@ -11,6 +11,8 @@ const project: ProjectType = {
   selected: false,
   type: "project",
   date: "Jul. 2021 ~ Dec. 2021",
+  githubLink: "https://github.com/RoadoneP/Squid_Game",
+  videoDemoLink: "https://www.youtube.com/watch?v=lrE2tKr2wsk",
 };
 
 export default project;

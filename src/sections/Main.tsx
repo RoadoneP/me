@@ -4,76 +4,102 @@ import { Card, Footer, Header } from "@/components";
 import { about } from "@/data";
 import { useLayoutScroll } from "@/hooks/useLayoutScroll";
 import { About, Educations, Experiences, Honors, Projects, Publications } from "@/sections";
-import { Box, Container, Flex } from "@chakra-ui/react";
+import { Box, Container, Flex, useColorModeValue } from "@chakra-ui/react";
 import Navigation from "../components/Navigation";
 
 export default function Main({ locale }: { locale: Language }) {
   const aboutData = about[locale as Language] as AboutType;
+  const proseColor = useColorModeValue("ink.700", "whiteAlpha.820");
+  const listColor = useColorModeValue("ink.600", "whiteAlpha.760");
 
-  const { currentSection, sectionHandler, isOpen, sectionRef, headerRef, isDesktop } =
-    useLayoutScroll();
+  const { currentSection, sectionHandler, sectionRef } = useLayoutScroll();
 
   return (
-    <Container maxW={"container.xl"} p={{ base: 0, md: 8 }}>
-      <Flex flexDir={{ base: "column", md: "row" }}>
+    <Container maxW="1440px" px={{ base: 3, md: 6 }} pt={{ base: 24, md: 28, xl: 8 }} pb={8}>
+      <Box display={{ base: "block", xl: "none" }} h={{ base: "88px", md: "92px" }} mb={5}>
+        <Navigation currentSection={currentSection} sectionHandler={sectionHandler} mobile />
+      </Box>
+      <Flex flexDir={{ base: "column", xl: "row" }} gap={{ base: 4, xl: 6 }} align="flex-start">
         <Flex
-          minW={{ base: 0, md: "280px" }}
+          w={{ base: "full", xl: "420px" }}
+          minW={{ base: 0, xl: "420px" }}
           h={{ base: "auto", md: "full" }}
-          borderRadius={16}
-          flexDir={"column"}
-          position={isDesktop ? "sticky" : "static"}
-          top={{ base: 0, md: 8 }}>
-          <Box ref={headerRef} m={2}>
-            <Header aboutData={aboutData} />
+          flexDir="column"
+          position={{ base: "static", xl: "sticky" }}
+          top={{ base: 0, xl: 8 }}>
+          <Box>
+            <Header aboutData={aboutData} locale={locale} />
           </Box>
-          <Navigation
-            isOpen={isOpen}
-            currentSection={currentSection}
-            sectionHandler={sectionHandler}
-          />
+          <Box display={{ base: "none", xl: "block" }}>
+            <Navigation currentSection={currentSection} sectionHandler={sectionHandler} />
+          </Box>
         </Flex>
-        <Flex
-          maxW={{ base: "full", md: "calc(100% - 280px)" }}
-          flexGrow={1}
-          py={{
-            base: 0,
-            md: 2,
-          }}
-          px={2}>
-          <Card gap={8} w="full">
+
+        <Flex flexGrow={1} minW={0} maxW="full">
+          <Card gap={{ base: 8, md: 10 }} w="full" p={{ base: 5, md: 8 }}>
             <Flex
               w="full"
-              flexDir={"column"}
-              gap={8}
+              flexDir="column"
+              gap={{ base: 8, md: 10 }}
               id="about"
+              scrollMarginTop={{ base: "112px", md: "120px", xl: "32px" }}
               ref={el => {
                 sectionRef.current[0] = el!;
               }}>
-              <Box>
+              <Box
+                sx={{
+                  p: { base: 0, md: 1 },
+                  "blockquote p": {
+                    color: proseColor,
+                  },
+                  "p, li": {
+                    color: proseColor,
+                    lineHeight: 1.9,
+                  },
+                  "ul, ol": {
+                    color: listColor,
+                    paddingInlineStart: "1.25rem",
+                    display: "grid",
+                    gap: 2.5,
+                  },
+                  h2: {
+                    marginTop: "2.5rem",
+                    marginBottom: "0.75rem",
+                  },
+                }}>
                 <aboutData.Bio />
               </Box>
               <About locale={locale} />
               <Projects locale={locale} />
             </Flex>
+
             <Flex
+              id="educations"
+              scrollMarginTop={{ base: "112px", md: "120px", xl: "32px" }}
               ref={el => {
                 sectionRef.current[1] = el!;
               }}>
               <Educations locale={locale} />
             </Flex>
             <Flex
+              id="publications"
+              scrollMarginTop={{ base: "112px", md: "120px", xl: "32px" }}
               ref={el => {
                 sectionRef.current[2] = el!;
               }}>
               <Publications locale={locale} />
             </Flex>
             <Flex
+              id="experiences"
+              scrollMarginTop={{ base: "112px", md: "120px", xl: "32px" }}
               ref={el => {
                 sectionRef.current[3] = el!;
               }}>
               <Experiences locale={locale} />
             </Flex>
             <Flex
+              id="honors"
+              scrollMarginTop={{ base: "112px", md: "120px", xl: "32px" }}
               ref={el => {
                 sectionRef.current[4] = el!;
               }}>

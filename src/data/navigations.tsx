@@ -8,8 +8,8 @@ export const navigations = [
   {
     id: "educations",
     href: "#educations",
-    label: "Educations",
-    labelShort: "Edus",
+    label: "Education",
+    labelShort: "Edu",
   },
   {
     id: "publications",
@@ -20,13 +20,13 @@ export const navigations = [
   {
     id: "experiences",
     href: "#experiences",
-    label: "Experiences",
-    labelShort: "Exps",
+    label: "Experience",
+    labelShort: "Exp",
   },
   {
     id: "honors",
     href: "#honors",
     label: "Honors",
-    labelShort: "Honors",
+    labelShort: "Award",
   },
 ];

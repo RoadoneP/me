@@ -8,4 +8,3 @@ export default function Index({
 }) {
   return <Main locale={locale} />;
 }
-

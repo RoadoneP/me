@@ -30,7 +30,3 @@ pnpm run deploy
 - TypeScript
 - Next.js
 - ChakraUI
-
-## Reference
-
-This project was inspired by [https://github.com/jiwnchoi/me](https://github.com/jiwnchoi/me).

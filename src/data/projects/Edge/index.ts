@@ -11,6 +11,8 @@ const project: ProjectType = {
   selected: false,
   type: "project",
   date: "Mar. 2021 ~ Nov. 2021",
+  githubLink: "https://github.com/RoadoneP/Korean_license_plate_recognition",
+  pdfLink: "https://koreascience.kr/article/CFKO202133649075982.page",
 };
 
 export default project;

@@ -22,5 +22,13 @@ export const authors: AuthorType[] = [
   {
     name: "MinSeok Jung",
     url: "https://admins97.github.io/",
-  }
+  },
+  {
+    name: "Hyun Seok Seong",
+    url: "https://hynnsk.github.io/",
+  },
+  {
+    name: "Sangeek Hyun",
+    url: "https://hse1032.github.io/"
+  },
 ];

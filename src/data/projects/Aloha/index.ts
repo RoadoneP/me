@@ -11,6 +11,7 @@ const project: ProjectType = {
   selected: false,
   type: "project",
   date: "Jul. 2021 ~ Dec. 2021",
+  githubLink: "https://github.com/RoadoneP/Aloha",
 };
 
 export default project;
