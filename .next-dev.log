@@ -38,3 +38,24 @@ Browserslist: caniuse-lite is outdated. Please run:
 [0m [90m 72 |[39m               [33m<[39m[33m/[39m[33mBox[39m[33m>[39m[0m
 [0m [90m 73 |[39m               [33m<[39m[33mAbout[39m locale[33m=[39m{locale} [33m/[39m[33m>[39m[0m
 [0m [90m 74 |[39m               [33m<[39m[33mProjects[39m locale[33m=[39m{locale} [33m/[39m[33m>[39m[0m
+ ⨯ src\sections\Main.tsx (71:27) @ Bio
+ ⨯ TypeError: Cannot read properties of undefined (reading 'Bio')
+    at Main (./src/sections/Main.tsx:212:141)
+[0m [90m 69 |[39m                   }[33m,[39m[0m
+[0m [90m 70 |[39m                 }}[33m>[39m[0m
+[0m[31m[1m>[22m[39m[90m 71 |[39m                 [33m<[39m[33maboutData[39m[33m.[39m[33mBio[39m [33m/[39m[33m>[39m[0m
+[0m [90m    |[39m                           [31m[1m^[22m[39m[0m
+[0m [90m 72 |[39m               [33m<[39m[33m/[39m[33mBox[39m[33m>[39m[0m
+[0m [90m 73 |[39m               [33m<[39m[33mAbout[39m locale[33m=[39m{locale} [33m/[39m[33m>[39m[0m
+[0m [90m 74 |[39m               [33m<[39m[33mProjects[39m locale[33m=[39m{locale} [33m/[39m[33m>[39m[0m
+ ⨯ src\sections\Main.tsx (71:27) @ Bio
+ ⨯ TypeError: Cannot read properties of undefined (reading 'Bio')
+    at Main (./src/sections/Main.tsx:212:141)
+[0m [90m 69 |[39m                   }[33m,[39m[0m
+[0m [90m 70 |[39m                 }}[33m>[39m[0m
+[0m[31m[1m>[22m[39m[90m 71 |[39m                 [33m<[39m[33maboutData[39m[33m.[39m[33mBio[39m [33m/[39m[33m>[39m[0m
+[0m [90m    |[39m                           [31m[1m^[22m[39m[0m
+[0m [90m 72 |[39m               [33m<[39m[33m/[39m[33mBox[39m[33m>[39m[0m
+[0m [90m 73 |[39m               [33m<[39m[33mAbout[39m locale[33m=[39m{locale} [33m/[39m[33m>[39m[0m
+[0m [90m 74 |[39m               [33m<[39m[33mProjects[39m locale[33m=[39m{locale} [33m/[39m[33m>[39m[0m
+[?25h

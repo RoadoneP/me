@@ -35,7 +35,7 @@ const ko = [
   {
     date: "2025년 3월",
     description:
-      "성균관대학교 인공지능학과 박사과정을 이어가며 Visual Computing Lab (VCLAB)에서 연구를 진행하고 있습니다.",
+      "성균관대학교 인공지능학과 박사과정을 이어가며 Visual Computing Lab (VCLAB)에서 연구하고 있습니다.",
   },
   {
     date: "2025년 3월",

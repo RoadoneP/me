@@ -44,7 +44,7 @@ export const ko: CareerType[] = [
     location: "수원, 대한민국",
     date: "2022년 7월 - 현재",
     description:
-      "2D Segmentation 및 3D Segmentation (2D-to-3D Lifting) 연구 수행. 또한 Continual Learning과 Incremental Learning 기반의 adaptive vision system 연구.",
+      "Segmentation 연구 수행. 또한 Adaptive Vision System 관련 연구.",
     url: "https://sites.google.com/site/vclabskku/intro",
   },
   {
