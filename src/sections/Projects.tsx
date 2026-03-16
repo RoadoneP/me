@@ -25,7 +25,8 @@ export default function Projects({ locale }: { locale: Language }) {
         <Box alignSelf={{ base: "flex-start", md: "flex-end" }} flexShrink={0} position="relative" zIndex={1}>
           <ButtonGroup isAttached size="sm">
             <Button
-              minW="88px"
+              minW={{ base: "68px", md: "88px" }}
+              fontSize={{ base: "0.72rem", md: "sm" }}
               variant={projectExpanded ? "outline" : "solid"}
               onClick={() => {
                 setProjectExpanded(false);
@@ -33,7 +34,8 @@ export default function Projects({ locale }: { locale: Language }) {
               Featured
             </Button>
             <Button
-              minW="88px"
+              minW={{ base: "68px", md: "88px" }}
+              fontSize={{ base: "0.72rem", md: "sm" }}
               variant={projectExpanded ? "solid" : "outline"}
               onClick={() => {
                 setProjectExpanded(true);

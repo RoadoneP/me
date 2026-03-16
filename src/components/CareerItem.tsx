@@ -30,7 +30,7 @@ export default function CareerItem({ career }: CareerItemProps) {
   const titleContent = (
     <Text
       fontWeight={700}
-      fontSize={{ base: "lg", md: "xl" }}
+      fontSize={{ base: "sm", md: "xl" }}
       letterSpacing="-0.02em"
       color={titleColor}>
       {career.title}
@@ -47,9 +47,9 @@ export default function CareerItem({ career }: CareerItemProps) {
           wrap="wrap"
           align="center"
           gap={2}
-          fontSize="xs"
+          fontSize={{ base: "9px", md: "xs" }}
           fontWeight={700}
-          letterSpacing="0.18em"
+          letterSpacing={{ base: "0.12em", md: "0.18em" }}
           textTransform="uppercase"
           color={mutedColor}
           pt={{ base: 0, md: 4 }}>
@@ -69,7 +69,7 @@ export default function CareerItem({ career }: CareerItemProps) {
 
         <Box
           minW={0}
-          p={{ base: 4, md: 5 }}
+          p={{ base: 3, md: 5 }}
           borderRadius="2xl"
           borderWidth="1px"
           borderColor={borderColor}
@@ -86,7 +86,10 @@ export default function CareerItem({ career }: CareerItemProps) {
             {(career.role || career.location) && (
               <Flex wrap="wrap" align="center" gap={2}>
                 {career.role && (
-                  <Text fontSize="sm" fontStyle="italic" color={mutedColor}>
+                  <Text
+                    fontSize={{ base: "0.72rem", md: "sm" }}
+                    fontStyle="italic"
+                    color={mutedColor}>
                     {career.role}
                   </Text>
                 )}
@@ -107,7 +110,10 @@ export default function CareerItem({ career }: CareerItemProps) {
             )}
 
             {career.description && (
-              <Text fontSize="sm" lineHeight={1.8} color={descriptionColor}>
+              <Text
+                fontSize={{ base: "0.72rem", md: "sm" }}
+                lineHeight={{ base: 1.62, md: 1.8 }}
+                color={descriptionColor}>
                 {career.description}
               </Text>
             )}

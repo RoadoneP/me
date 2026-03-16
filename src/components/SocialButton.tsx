@@ -24,6 +24,9 @@ export default function SocialButton({
           leftIcon={<Icon as={icon} />}
           bg={bg}
           borderColor={borderColor}
+          h={{ base: 7, md: 9 }}
+          px={{ base: 2.5, md: 4 }}
+          fontSize={{ base: "0.72rem", md: "sm" }}
           fontWeight={600}
           borderRadius="full"
           _hover={{

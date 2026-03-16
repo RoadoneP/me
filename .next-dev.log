@@ -6,4 +6,35 @@
    - Local:        http://localhost:3000
 
    automatically enabled Fast Refresh for 1 custom loader
- ✓ Ready in 3.2s
+ ✓ Ready in 2.4s
+ ○ Compiling /src/middleware ...
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ ✓ Compiled /src/middleware in 9.7s (2617 modules)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ○ Compiling /[locale] ...
+ ✓ Compiled /[locale] in 4.8s (2885 modules)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ src\sections\Main.tsx (71:27) @ Bio
+ ⨯ TypeError: Cannot read properties of undefined (reading 'Bio')
+    at Main (./src/sections/Main.tsx:212:141)
+[0m [90m 69 |[39m                   }[33m,[39m[0m
+[0m [90m 70 |[39m                 }}[33m>[39m[0m
+[0m[31m[1m>[22m[39m[90m 71 |[39m                 [33m<[39m[33maboutData[39m[33m.[39m[33mBio[39m [33m/[39m[33m>[39m[0m
+[0m [90m    |[39m                           [31m[1m^[22m[39m[0m
+[0m [90m 72 |[39m               [33m<[39m[33m/[39m[33mBox[39m[33m>[39m[0m
+[0m [90m 73 |[39m               [33m<[39m[33mAbout[39m locale[33m=[39m{locale} [33m/[39m[33m>[39m[0m
+[0m [90m 74 |[39m               [33m<[39m[33mProjects[39m locale[33m=[39m{locale} [33m/[39m[33m>[39m[0m
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ✓ Compiled in 1399ms (2885 modules)
+ ⨯ src\sections\Main.tsx (71:27) @ Bio
+ ⨯ TypeError: Cannot read properties of undefined (reading 'Bio')
+    at Main (./src/sections/Main.tsx:212:141)
+[0m [90m 69 |[39m                   }[33m,[39m[0m
+[0m [90m 70 |[39m                 }}[33m>[39m[0m
+[0m[31m[1m>[22m[39m[90m 71 |[39m                 [33m<[39m[33maboutData[39m[33m.[39m[33mBio[39m [33m/[39m[33m>[39m[0m
+[0m [90m    |[39m                           [31m[1m^[22m[39m[0m
+[0m [90m 72 |[39m               [33m<[39m[33m/[39m[33mBox[39m[33m>[39m[0m
+[0m [90m 73 |[39m               [33m<[39m[33mAbout[39m locale[33m=[39m{locale} [33m/[39m[33m>[39m[0m
+[0m [90m 74 |[39m               [33m<[39m[33mProjects[39m locale[33m=[39m{locale} [33m/[39m[33m>[39m[0m

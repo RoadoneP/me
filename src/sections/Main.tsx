@@ -15,8 +15,8 @@ export default function Main({ locale }: { locale: Language }) {
   const { currentSection, sectionHandler, sectionRef } = useLayoutScroll();
 
   return (
-    <Container maxW="1440px" px={{ base: 3, md: 6 }} pt={{ base: 24, md: 28, xl: 8 }} pb={8}>
-      <Box display={{ base: "block", xl: "none" }} h={{ base: "88px", md: "92px" }} mb={5}>
+    <Container maxW="1440px" px={{ base: 3, md: 6 }} pt={{ base: 18, md: 28, xl: 8 }} pb={8}>
+      <Box display={{ base: "block", xl: "none" }} h={{ base: "72px", md: "92px" }} mb={{ base: 3.5, md: 5 }}>
         <Navigation currentSection={currentSection} sectionHandler={sectionHandler} mobile />
       </Box>
       <Flex flexDir={{ base: "column", xl: "row" }} gap={{ base: 4, xl: 6 }} align="flex-start">
@@ -36,13 +36,13 @@ export default function Main({ locale }: { locale: Language }) {
         </Flex>
 
         <Flex flexGrow={1} minW={0} maxW="full">
-          <Card gap={{ base: 8, md: 10 }} w="full" p={{ base: 5, md: 8 }}>
+          <Card gap={{ base: 5, md: 10 }} w="full" p={{ base: 3.5, md: 8 }}>
             <Flex
               w="full"
               flexDir="column"
-              gap={{ base: 8, md: 10 }}
+              gap={{ base: 5, md: 10 }}
               id="about"
-              scrollMarginTop={{ base: "112px", md: "120px", xl: "32px" }}
+              scrollMarginTop={{ base: "88px", md: "120px", xl: "32px" }}
               ref={el => {
                 sectionRef.current[0] = el!;
               }}>
@@ -54,16 +54,17 @@ export default function Main({ locale }: { locale: Language }) {
                   },
                   "p, li": {
                     color: proseColor,
-                    lineHeight: 1.9,
+                    lineHeight: { base: 1.68, md: 1.9 },
+                    fontSize: { base: "0.87rem", md: "1rem" },
                   },
                   "ul, ol": {
                     color: listColor,
-                    paddingInlineStart: "1.25rem",
+                    paddingInlineStart: { base: "0.95rem", md: "1.25rem" },
                     display: "grid",
-                    gap: 2.5,
+                    gap: { base: 1.75, md: 2.5 },
                   },
                   h2: {
-                    marginTop: "2.5rem",
+                    marginTop: { base: "1.75rem", md: "2.5rem" },
                     marginBottom: "0.75rem",
                   },
                 }}>
@@ -75,7 +76,7 @@ export default function Main({ locale }: { locale: Language }) {
 
             <Flex
               id="educations"
-              scrollMarginTop={{ base: "112px", md: "120px", xl: "32px" }}
+              scrollMarginTop={{ base: "88px", md: "120px", xl: "32px" }}
               ref={el => {
                 sectionRef.current[1] = el!;
               }}>
@@ -83,7 +84,7 @@ export default function Main({ locale }: { locale: Language }) {
             </Flex>
             <Flex
               id="publications"
-              scrollMarginTop={{ base: "112px", md: "120px", xl: "32px" }}
+              scrollMarginTop={{ base: "88px", md: "120px", xl: "32px" }}
               ref={el => {
                 sectionRef.current[2] = el!;
               }}>
@@ -91,7 +92,7 @@ export default function Main({ locale }: { locale: Language }) {
             </Flex>
             <Flex
               id="experiences"
-              scrollMarginTop={{ base: "112px", md: "120px", xl: "32px" }}
+              scrollMarginTop={{ base: "88px", md: "120px", xl: "32px" }}
               ref={el => {
                 sectionRef.current[3] = el!;
               }}>
@@ -99,7 +100,7 @@ export default function Main({ locale }: { locale: Language }) {
             </Flex>
             <Flex
               id="honors"
-              scrollMarginTop={{ base: "112px", md: "120px", xl: "32px" }}
+              scrollMarginTop={{ base: "88px", md: "120px", xl: "32px" }}
               ref={el => {
                 sectionRef.current[4] = el!;
               }}>

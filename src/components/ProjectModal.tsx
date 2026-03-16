@@ -51,13 +51,13 @@ function ProjectActionButton({
       <Flex
         align="center"
         gap={2}
-        px={3}
-        py={1.5}
+        px={{ base: 2, md: 3 }}
+        py={{ base: 1, md: 1.5 }}
         borderRadius="full"
         borderWidth="1px"
         borderColor={borderColor}
         bg={bg}
-        fontSize="xs"
+        fontSize={{ base: "9px", md: "xs" }}
         fontWeight={600}
         _hover={{
           borderColor: "brand.300",
@@ -99,26 +99,31 @@ function ProjectModal({
       <Portal>
         <ModalContent
           mx={{ base: 3, md: 0 }}
-          borderRadius="32px"
+          borderRadius={{ base: "24px", md: "32px" }}
           overflow="hidden"
           bg={bg}
           borderWidth="1px"
           borderColor={borderColor}
           boxShadow="0 32px 96px rgba(15, 23, 42, 0.3)">
-          <ModalHeader pb={4} pr={12} borderBottomWidth="1px" borderColor={borderColor}>
-            <Flex direction="column" gap={3}>
+          <ModalHeader
+            pb={{ base: 3, md: 4 }}
+            pr={{ base: 10, md: 12 }}
+            borderBottomWidth="1px"
+            borderColor={borderColor}>
+            <Flex direction="column" gap={{ base: 2.5, md: 3 }}>
               <Flex align="center" gap={2} wrap="wrap">
                 <Badge
                   bg={badgeBg}
                   color={badgeColor}
-                  px={2.5}
+                  px={{ base: 2, md: 2.5 }}
                   py={1}
-                  borderRadius="full">
+                  borderRadius="full"
+                  fontSize={{ base: "10px", md: "xs" }}>
                   {type}
                 </Badge>
                 {date && (
                   <Text
-                    fontSize="xs"
+                    fontSize={{ base: "9px", md: "xs" }}
                     fontWeight={700}
                     letterSpacing="0.12em"
                     textTransform="uppercase"
@@ -128,10 +133,14 @@ function ProjectModal({
                 )}
               </Flex>
               <Box>
-                <Heading as="h2" size="lg">
+                <Heading as="h2" fontSize={{ base: "lg", md: "2xl" }}>
                   {title}
                 </Heading>
-                <Text mt={2} fontSize="sm" lineHeight={1.8} color={mutedColor}>
+                <Text
+                  mt={2}
+                  fontSize={{ base: "0.72rem", md: "sm" }}
+                  lineHeight={{ base: 1.62, md: 1.8 }}
+                  color={mutedColor}>
                   {description}
                 </Text>
                 <Flex mt={4} gap={2} wrap="wrap">

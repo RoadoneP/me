@@ -28,7 +28,7 @@ export default function Footer({ locale }: { locale: Language }) {
   };
 
   return (
-    <Card mt={{ base: 6, md: 8 }} mb={4} p={{ base: 4, md: 5 }}>
+    <Card mt={{ base: 6, md: 8 }} mb={4} p={{ base: 3, md: 5 }}>
       <Flex
         align={{ base: "flex-start", md: "center" }}
         justify="space-between"
@@ -36,14 +36,14 @@ export default function Footer({ locale }: { locale: Language }) {
         wrap="wrap">
         <Flex direction="column" gap={1}>
           <Text
-            fontSize="xs"
+            fontSize="9px"
             fontWeight={800}
-            letterSpacing="0.22em"
+            letterSpacing="0.16em"
             textTransform="uppercase"
             color="brand.600">
             Contact & Locale
           </Text>
-          <Text fontSize="sm" color={mutedColor}>
+          <Text fontSize={{ base: "0.72rem", md: "sm" }} color={mutedColor}>
             Research updates, selected work, and collaboration links.
           </Text>
         </Flex>
@@ -74,7 +74,7 @@ export default function Footer({ locale }: { locale: Language }) {
           </Button>
         </Flex>
       </Flex>
-      <Text fontSize="xs" color={mutedColor}>
+      <Text fontSize={{ base: "0.72rem", md: "xs" }} color={mutedColor}>
         Copyright (c) 2023 - Present Gilhan Park. All rights reserved.
       </Text>
     </Card>

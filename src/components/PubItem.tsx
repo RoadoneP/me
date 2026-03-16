@@ -34,7 +34,10 @@ function AuthorNames({
   const authorColor = useColorModeValue("ink.600", "whiteAlpha.760");
 
   return (
-    <Text fontSize="sm" lineHeight={1.8} color={authorColor}>
+    <Text
+      fontSize={{ base: "0.72rem", md: "sm" }}
+      lineHeight={{ base: 1.62, md: 1.8 }}
+      color={authorColor}>
       {authorNames.map((author, index) => {
         const authorData = authors.find(a => a.name === author);
         const isEqual = equalContrib?.some(
@@ -90,13 +93,13 @@ function PubButton({
       <Flex
         align="center"
         gap={2}
-        px={3}
-        py={1.5}
+        px={{ base: 2, md: 3 }}
+        py={{ base: 1, md: 1.5 }}
         borderRadius="full"
         borderWidth="1px"
         borderColor={borderColor}
         bg={bg}
-        fontSize="xs"
+        fontSize={{ base: "9px", md: "xs" }}
         fontWeight={600}
         _hover={{
           borderColor: "brand.300",
@@ -117,7 +120,7 @@ export default function PubItem({ pub }: { pub: PubType }) {
   return (
     <ListItem>
       <Box
-        p={{ base: 4, md: 5 }}
+        p={{ base: 3, md: 5 }}
         borderRadius="2xl"
         borderWidth="1px"
         borderColor={borderColor}
@@ -128,20 +131,20 @@ export default function PubItem({ pub }: { pub: PubType }) {
               {pub.abbr}
             </Badge>
             {pub.equalContrib && (
-              <Text fontSize="xs" color={mutedColor}>
+              <Text fontSize={{ base: "9px", md: "xs" }} color={mutedColor}>
                 * equal contribution
               </Text>
             )}
           </Flex>
 
-          <Text fontWeight={700} fontSize={{ base: "lg", md: "xl" }} letterSpacing="-0.02em">
+          <Text fontWeight={700} fontSize={{ base: "sm", md: "xl" }} letterSpacing="-0.02em">
             {pub.title}
           </Text>
 
           <AuthorNames authorNames={pub.authorNames} equalContrib={pub.equalContrib} />
 
           {pub.venue.map(venue => (
-            <Text color={mutedColor} fontSize="sm" key={venue}>
+            <Text color={mutedColor} fontSize={{ base: "0.72rem", md: "sm" }} key={venue}>
               {venue}
             </Text>
           ))}

@@ -39,7 +39,7 @@ export default function Header({
   ];
 
   return (
-    <Card position="relative" overflow="hidden" p={{ base: 5, md: 7 }} gap={{ base: 6, md: 8 }}>
+    <Card position="relative" overflow="hidden" p={{ base: 3.5, md: 7 }} gap={{ base: 4, md: 8 }}>
       <Box
         position="absolute"
         top="-24"
@@ -51,10 +51,10 @@ export default function Header({
         opacity={0.35}
         filter="blur(60px)"
       />
-      <Flex direction="column" gap={{ base: 5, md: 7 }}>
+      <Flex direction="column" gap={{ base: 3.5, md: 7 }}>
         <Box
-          w={{ base: "120px", sm: "150px", md: "180px" }}
-          maxW="40%"
+          w={{ base: "84px", sm: "132px", md: "180px" }}
+          maxW={{ base: "32%", sm: "40%" }}
           alignSelf={{ base: "flex-end", sm: "flex-start" }}>
           <Box position="relative">
             <Box
@@ -89,34 +89,37 @@ export default function Header({
           </Box>
         </Box>
 
-        <Flex flex="1" direction="column" gap={{ base: 6, md: 7 }}>
-          <Flex direction="column" gap={4}>
+        <Flex flex="1" direction="column" gap={{ base: 4, md: 7 }}>
+          <Flex direction="column" gap={{ base: 2.5, md: 4 }}>
             <Text
-              fontSize="xs"
+              fontSize="9px"
               fontWeight={800}
-              letterSpacing="0.24em"
+              letterSpacing="0.18em"
               textTransform="uppercase"
               color="brand.600">
               Visual AI Research
             </Text>
-            <Flex direction="column" gap={3}>
+            <Flex direction="column" gap={{ base: 2, md: 3 }}>
               <Badge
                 w="fit-content"
-                px={3}
+                px={{ base: 2, md: 3 }}
                 py={1}
                 borderRadius="full"
                 colorScheme="brand"
-                fontSize="0.7rem"
+                fontSize={{ base: "0.58rem", md: "0.7rem" }}
                 textTransform="none">
                 {aboutData.description}
               </Badge>
-              <Heading as="h1" fontSize={{ base: "3xl", sm: "4xl", md: "5xl" }}>
+              <Heading
+                as="h1"
+                fontSize={{ base: "1.65rem", sm: "3xl", md: "5xl" }}
+                lineHeight={{ base: 1.02, md: 1 }}>
                 {aboutData.name}
               </Heading>
               <Text
                 maxW={{ base: "100%", md: "32rem" }}
-                fontSize={{ base: "sm", sm: "md", md: "lg" }}
-                lineHeight={{ base: 1.7, md: 1.8 }}
+                fontSize={{ base: "0.72rem", sm: "sm", md: "lg" }}
+                lineHeight={{ base: 1.58, md: 1.8 }}
                 color={subheadingColor}>
                 Ph.D. student at Sungkyunkwan University researching segmentation, adaptation,
                 and video understanding for computer vision systems.
@@ -126,22 +129,22 @@ export default function Header({
               {focusAreas.map(area => (
                 <Badge
                   key={area}
-                  px={3}
-                  py={1.5}
+                  px={{ base: 2, md: 3 }}
+                  py={{ base: 0.75, md: 1.5 }}
                   borderRadius="full"
                   bg={statSurface}
                   borderWidth="1px"
                   borderColor={statBorder}
                   color="inherit"
                   textTransform="none"
-                  fontSize="0.75rem">
+                  fontSize={{ base: "0.62rem", md: "0.75rem" }}>
                   {area}
                 </Badge>
               ))}
             </Flex>
           </Flex>
 
-          <List display="flex" flexWrap="wrap" gap={2.5}>
+          <List display="flex" flexWrap="wrap" gap={{ base: 1.5, md: 2.5 }}>
             {socials.map(social => (
               <SocialButton key={social.href} {...social} />
             ))}
@@ -149,14 +152,14 @@ export default function Header({
 
           <Grid
             templateColumns={{
-              base: "1fr",
+              base: "repeat(2, minmax(0, 1fr))",
               sm: "repeat(2, minmax(0, 1fr))",
             }}
-            gap={3}>
+            gap={{ base: 2.5, md: 3 }}>
             {stats.map(stat => (
               <GridItem
                 key={stat.label}
-                p={4}
+                p={{ base: 2.5, md: 4 }}
                 borderRadius="2xl"
                 borderWidth="1px"
                 borderColor={statBorder}
@@ -172,7 +175,7 @@ export default function Header({
                 </Text>
                 <Text
                   mt={2}
-                  fontSize={{ base: "xl", md: "2xl" }}
+                  fontSize={{ base: "md", md: "2xl" }}
                   fontWeight={800}
                   letterSpacing="-0.04em"
                   whiteSpace="nowrap">

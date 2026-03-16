@@ -13,21 +13,21 @@ export default function SectionTitle({ eyebrow, title, description }: SectionTit
   return (
     <Flex direction="column" gap={2}>
       <Text
-        fontSize="xs"
+        fontSize="9px"
         fontWeight={800}
-        letterSpacing="0.24em"
+        letterSpacing="0.18em"
         textTransform="uppercase"
         color={eyebrowColor}>
         {eyebrow}
       </Text>
-      <Heading as="h2" size="lg">
+      <Heading as="h2" fontSize={{ base: "lg", md: "2xl" }}>
         {title}
       </Heading>
       {description && (
         <Text
           maxW="2xl"
-          fontSize={{ base: "sm", md: "md" }}
-          lineHeight={1.8}
+          fontSize={{ base: "0.72rem", md: "md" }}
+          lineHeight={{ base: 1.62, md: 1.8 }}
           color={descriptionColor}>
           {description}
         </Text>
